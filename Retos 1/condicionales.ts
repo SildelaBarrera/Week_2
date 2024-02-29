@@ -70,24 +70,22 @@ function continent(country: string){
         if (country == europa[i]){
         console.log("Europa");
         }
-        if (country == africa[i]){
+        else if (country == africa[i]){
             console.log("África");
         }
-        if (country == asia[i]){
+        else if (country == asia[i]){
             console.log("Asia");
         }
-        if (country == américa[i]){
+        else if (country == américa[i]){
             console.log("América");
         }
-        if (country == oceanía[i]){
+        else if (country == oceanía[i]){
             console.log("Oceanía");
         }
-
     }
 }
 
 continent("Tanzania");
-
 
 
 // 4. Realizar una función que te imprima por consola el siguiente mensaje:
@@ -96,14 +94,13 @@ continent("Tanzania");
 // 5. La cabecera de la función tendrá el siguiente aspecto: function isEven(number)
 // 6. Subir los cambios a GitHub.
 
-let arrayNum: number[] = [5, 24, 86, 23, 65, 1, 11, 78, 192]
 
 function isEven(number: number){
 
     if(number % 2 == 0){
     console.log("El número es par")
     }
-    if(number % 2 != 0){
+    else{
         console.log("El número es impar")
         }  
 }
