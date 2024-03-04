@@ -7,6 +7,7 @@ function hasEven(myNumbs: number[]){
 
     let i = 0
     let newArray: number[] = []
+
     while(i < myNumbs.length){
 
         if(myNumbs[i] % 2 == 0){
@@ -35,4 +36,4 @@ function startWithM (myNames: string[]){
     return(resultado)
 }
 
-console.log(startWithM(["Mónica", "Michael", "Meter"]))
+console.log(startWithM(["Mónica", "Michael", "Mary"]))

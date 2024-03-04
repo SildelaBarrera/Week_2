@@ -11,7 +11,6 @@ function evenNumbers(num:number){
     for(let i=0; i < num; i++){
        arrayNumbers.push(i)       
     }
-
     for(let i=0; i <= arrayNumbers.length; i++){
 
         if(arrayNumbers[i] % 2 != 0){
@@ -48,7 +47,6 @@ function isRainbow(colors: string[]){
 
     let arrayRainb: string[] = ["Rojo", "Naranja", "Amarillo", "Verde", "Añil", "Azul", "Violeta"];
     
-    
     for(let i = 0; i < colors.length; i++){
 
         let colorRainb = false;
@@ -63,8 +61,7 @@ function isRainbow(colors: string[]){
         }
         else {
             console.log("El color " + colors[i] + " no está en el arcoiris");
-        }
-        
+        }   
     }
 }
 isRainbow(["Violeta", "Rosa", "Gris", "Amarillo"])
@@ -82,10 +79,9 @@ export function add(myWords: string[]){
         suma += (myWords[i]).length
     }
 return (suma);
-};
+}
 
 console.log(add(["Sol", "Mar", "Sal", "Luz" ]))
-
 
 
 // 6. Subir los cambios a GitHub
