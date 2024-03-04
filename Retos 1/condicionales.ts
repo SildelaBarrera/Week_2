@@ -95,7 +95,7 @@ continent("Tanzania");
 // 6. Subir los cambios a GitHub.
 
 
-function isEven(number: number){
+export function isEven(number: number){
 
     if(number % 2 == 0){
     console.log("El número es par")
@@ -106,3 +106,4 @@ function isEven(number: number){
 }
 
 isEven(1563);
+

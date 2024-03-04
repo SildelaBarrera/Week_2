@@ -12,9 +12,9 @@ function evenNumbers(num:number){
        arrayNumbers.push(i)       
     }
 
-    for(let i=0; i < arrayNumbers.length; i++){
+    for(let i=0; i <= arrayNumbers.length; i++){
 
-        if(arrayNumbers[i] % 2 == 0){
+        if(arrayNumbers[i] % 2 != 0){
             arrayEven.push(i)
         }
     }
@@ -47,15 +47,24 @@ console.log(myRevert(["mañana", "mediodía", "tarde", "noche"]))
 function isRainbow(colors: string[]){
 
     let arrayRainb: string[] = ["Rojo", "Naranja", "Amarillo", "Verde", "Añil", "Azul", "Violeta"];
+    
+    
+    for(let i = 0; i < colors.length; i++){
 
-    for(let i =0; i < colors.length; i++){
+        let colorRainb = false;
 
-        if (arrayRainb.includes(colors[i]) == true) {
+        for (let ind  = 0; ind < arrayRainb.length; ind++){
+            if (arrayRainb[ind] == colors[i]){
+                colorRainb = true;
+            }
+        }
+        if (colorRainb == true){
             console.log("El color " + colors[i] + " sí se encuentra en el arcoiris");
         }
         else {
             console.log("El color " + colors[i] + " no está en el arcoiris");
         }
+        
     }
 }
 isRainbow(["Violeta", "Rosa", "Gris", "Amarillo"])
@@ -64,7 +73,7 @@ isRainbow(["Violeta", "Rosa", "Gris", "Amarillo"])
 // almacenadas en un array.
 // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
 
-function add(myWords: string[]){
+export function add(myWords: string[]){
 
     let suma: number = 0;
     
@@ -73,8 +82,10 @@ function add(myWords: string[]){
         suma += (myWords[i]).length
     }
 return (suma);
-}
+};
 
 console.log(add(["Sol", "Mar", "Sal", "Luz" ]))
+
+
 
 // 6. Subir los cambios a GitHub
