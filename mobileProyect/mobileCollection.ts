@@ -43,7 +43,7 @@ public printCollection(){
 
         phrase += (this.mobiles[i].printMobile())
     }
-    console.log("\nPrice overall: " + this.totalPrice);
+    console.log("\nPrice overall: " + this.getTotalPrice());
 }
 
 private totalPriceCalculation(){
