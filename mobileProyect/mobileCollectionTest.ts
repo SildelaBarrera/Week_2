@@ -13,7 +13,7 @@ let mobile3 = new Mobile("S10 plus", "Samsung", "10", "Gris", 300);
 let mobile4 = new Mobile("Iphone 13", "Iphone", "13", "Azul", 600);
 
 let arrayMobiles: Mobile[] = [mobile1, mobile2, mobile3, mobile4];
-let mobileCollection1 = new MobileCollection(arrayMobiles, 0);
+let mobileCollection1 = new MobileCollection(arrayMobiles);
 
 console.log(mobileCollection1.getMobiles())
 
