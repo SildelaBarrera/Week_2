@@ -27,13 +27,15 @@ console.log(hasEven([24, 17, 1, 8, 36, 44, 9, 82, 11]));
 function startWithM (myNames: string[]){
 
     let resultado: boolean = true
-    for(let i=0; i < myNames.length; i++){
+    let i = 0;
+    while(i < myNames.length){
 
         if(myNames[i][0] != "M"){
            resultado = false
         }
+        i++
     }
     return(resultado)
 }
 
-console.log(startWithM(["Mónica", "Michael", "Mary"]))
+console.log(startWithM(["Mónica", "Michael", "Mary", "Merce"]))
