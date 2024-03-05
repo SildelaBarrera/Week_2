@@ -39,32 +39,35 @@ export class Point{
         let originX: number = 0;
         let originY: number = 0;
 
-        let distance = Math.sqrt(Math.pow(this.x - originX, 2) + (Math.pow(this.y - originY, 2)))
+        let distance = Math.sqrt(Math.pow(this.getX() - originX, 2) + (Math.pow(this.getY() - originY, 2)))
         return(distance);
     }
     public calculateDistance(anotherPoint: Point){
 
-        let distance1 = Math.sqrt(Math.pow(this.x - anotherPoint.x, 2) + (Math.pow(this.y - anotherPoint.y, 2)))
+        let distance1 = Math.sqrt(Math.pow(this.getX() - anotherPoint.x, 2) + (Math.pow(this.getY() - anotherPoint.y, 2)))
         return(distance1);
     }
+    
     public calculateQuadrant(){
 
-        
+        let quadrant: number = 0;
+
         if(this.x == 0 && this.y == 0){
-           return 0;
+           quadrant = 0;
         }
         if(this.x > 0 && this.y > 0){
-            return 1;
+            quadrant = 1;
         }
         if(this.x < 0 && this.y >0){
-           return 2;
+           quadrant = 2;
         }
         if(this.x < 0 && this.y < 0){
-            return 3;
+            quadrant = 3;
         }
         if(this.x > 0 && this.y < 0){
-            return 4;
+            quadrant = 4;
         }
+    return (quadrant)
     }
     
     public calculateNearest(points: Point[]):Point{
