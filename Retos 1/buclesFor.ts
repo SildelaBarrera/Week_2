@@ -5,20 +5,22 @@
 
 function evenNumbers(num:number){
 
-    let arrayNumbers: number[] = [];
-    let impar: number = 0;
+    function evenNumbers(num:number){
 
-    for(let i=0; i < num; i++){
-        arrayNumbers.push(i)      
-
-        if(arrayNumbers[i] % 2 != 0){
-            impar = arrayNumbers[i] 
-            console.log(impar)  
-        }   
-    } 
-}
-
-evenNumbers(18);
+        let arrayNumbers: number[] = [];
+        let impar: number = 0;
+    
+        for(let i=0; i < num; i++){
+            arrayNumbers.push(i)      
+    
+            if(arrayNumbers[i] % 2 != 0){
+                impar = arrayNumbers[i] 
+                console.log(impar)  
+            }   
+        } 
+    }
+    
+    evenNumbers(18);
 
 // 3. Realizar una función que como parámetro de entrada reciba un array de strings y como
 // salida devuelva el array revertido. No se puede utilizar el método revert de la clase array
