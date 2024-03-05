@@ -21,3 +21,4 @@ console.log(mobileCollection1.getTotalPrice());
 
 mobileCollection1.printCollection();
 
+
